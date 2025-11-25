@@ -1,6 +1,120 @@
 
-.winterbg {
-    height: 100%;
-    width: 100%;
+
+
+[class*="btn"] {
+  position: absolute;
+  height: auto;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
 }
+
+/*winter*/
+.winterbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/*winter buttons*/
+.winterbtnwi {width: 10%; bottom: 5%; right: 5%;}
+.springbtnwi {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnwi {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnwi {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnwi {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnwi {width: 10%; bottom: 5%; right: 55%;}
+
+/*spring*/
+.springbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+
+/*spring buttons*/
+.winterbtnsp{width: 10%; bottom: 5%; right: 5%;}
+.springbtnsp {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnsp {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnsp {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnsp {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnsp {width: 10%; bottom: 5%; right: 55%;}
+
+/*summer*/
+.summerbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+
+/*summer buttons*/
+.winterbtnsu{width: 10%; bottom: 5%; right: 5%;}
+.springbtnsu {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnsu {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnsu {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnsu {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnsu {width: 10%; bottom: 5%; right: 55%;}
+
+/*autumn*/
+.autumnbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+/*autumn buttons*/
+.winterbtnau{width: 10%; bottom: 5%; right: 5%;}
+.springbtnau {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnau {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnau {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnau {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnau {width: 10%; bottom: 5%; right: 55%;}
+
+/*dark*/
+.darkbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+/*dark buttons*/
+.winterbtnd{width: 10%; bottom: 5%; right: 5%;}
+.springbtnd {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnd {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnd {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnd {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnd {width: 10%; bottom: 5%; right: 55%;}
+
+/*light*/
+.lightbg {
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+/*light buttons*/
+.winterbtnl{width: 10%; bottom: 5%; right: 5%;}
+.springbtnl {width: 10%; bottom: 5%; right: 15%;}
+.summerbtnl {width: 10%; bottom: 7%; right: 25%;}
+.autumnbtnl {width: 9%; bottom: 4.7%; right: 35.5%;}
+.darkbtnl {width: 10%; bottom: 5%; right: 44.5%;}
+.lightbtnl {width: 10%; bottom: 5%; right: 55%;}
 
