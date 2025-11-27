@@ -24,6 +24,32 @@ function setTheme(theme) {
 // Initialize default theme
 setTheme('dark');
 
+//circle expantion
+const circleButtonsp = document.querySelector('.circle-buttonsp');
+circleButtonsp.addEventListener('click', () => {
+    circleButtonsp.classList.toggle('expanded');
+});
+const circleButtonsu = document.querySelector('.circle-buttonsu');
+circleButtonsu.addEventListener('click', () => {
+    circleButtonsu.classList.toggle('expanded');
+});
+const circleButtonau = document.querySelector('.circle-buttonau');
+circleButtonau.addEventListener('click', () => {
+    circleButtonau.classList.toggle('expanded');
+});
+const circleButtond = document.querySelector('.circle-buttond');
+circleButtond.addEventListener('click', () => {
+    circleButtond.classList.toggle('expanded');
+});
+const circleButtonl = document.querySelector('.circle-buttonl');
+circleButtonl.addEventListener('click', () => {
+    circleButtonl.classList.toggle('expanded');
+});
+const circleButtonwi = document.querySelector('.circle-buttonwi');
+circleButtonwi.addEventListener('click', () => {
+    circleButtonwi.classList.toggle('expanded');
+});
+
 // Set up event listeners after DOM content is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // wire button clicks
@@ -69,4 +95,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('darkbtnl').addEventListener('click', () => setTheme('dark'));
     document.getElementById('lightbtnl').addEventListener('click', () => setTheme('light'));
 });
-
