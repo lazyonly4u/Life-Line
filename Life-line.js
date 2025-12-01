@@ -1,28 +1,28 @@
 
 function setTheme(theme) {
   // hide all theme divs
-    document.querySelectorAll('.winter, .spring, .summer, .autumn, .dark, .light').forEach(div => {
+    document.querySelectorAll('.wintertimer, .springtimer, .summertimer, .autumntimer, .darktimer, .lighttimer').forEach(div => {
         div.classList.add('hidden');
     });
 
   // show the active theme div
-    if (theme === 'winter') {
-        document.querySelector('.winter').classList.remove('hidden');
-    } else if (theme === 'spring') {
-        document.querySelector('.spring').classList.remove('hidden');
-    } else if (theme === 'summer') {
-        document.querySelector('.summer').classList.remove('hidden');
-    } else if (theme === 'autumn') {
-        document.querySelector('.autumn').classList.remove('hidden');
-    } else if (theme === 'dark') {
-        document.querySelector('.dark').classList.remove('hidden');
-    } else if (theme === 'light') {
-        document.querySelector('.light').classList.remove('hidden');
+    if (theme === 'wintertimer') {
+        document.querySelector('.wintertimer').classList.remove('hidden');
+    } else if (theme === 'springtimer') {
+        document.querySelector('.springtimer').classList.remove('hidden');
+    } else if (theme === 'summertimer') {
+        document.querySelector('.summertimer').classList.remove('hidden');
+    } else if (theme === 'autumntimer') {
+        document.querySelector('.autumntimer').classList.remove('hidden');
+    } else if (theme === 'darktimer') {
+        document.querySelector('.darktimer').classList.remove('hidden');
+    } else if (theme === 'lighttimer') {
+        document.querySelector('.lighttimer').classList.remove('hidden');
     }
 }
 
 // Initialize default theme
-setTheme('dark');
+setTheme('darktimer');
 
 //circle expantion
 const circleButtonsp = document.querySelector('.circle-buttonsp');
@@ -53,45 +53,77 @@ circleButtonwi.addEventListener('click', () => {
 // Set up event listeners after DOM content is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // wire button clicks
-    document.getElementById('winterbtnwi').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnwi').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnwi').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnwi').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnwi').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnwi').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnwi').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnwi').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnwi').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnwi').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnwi').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnwi').addEventListener('click', () => setTheme('lighttimer'));
 
-    document.getElementById('winterbtnsp').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnsp').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnsp').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnsp').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnsp').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnsp').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnsp').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnsp').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnsp').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnsp').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnsp').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnsp').addEventListener('click', () => setTheme('lighttimer'));
 
-    document.getElementById('winterbtnsu').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnsu').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnsu').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnsu').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnsu').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnsu').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnsu').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnsu').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnsu').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnsu').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnsu').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnsu').addEventListener('click', () => setTheme('lighttimer'));
 
-    document.getElementById('winterbtnau').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnau').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnau').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnau').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnau').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnau').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnau').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnau').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnau').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnau').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnau').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnau').addEventListener('click', () => setTheme('lighttimer'));
 
-    document.getElementById('winterbtnd').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnd').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnd').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnd').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnd').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnd').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnd').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnd').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnd').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnd').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnd').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnd').addEventListener('click', () => setTheme('lighttimer'));
 
-    document.getElementById('winterbtnl').addEventListener('click', () => setTheme('winter'));
-    document.getElementById('springbtnl').addEventListener('click', () => setTheme('spring'));
-    document.getElementById('summerbtnl').addEventListener('click', () => setTheme('summer'));
-    document.getElementById('autumnbtnl').addEventListener('click', () => setTheme('autumn'));
-    document.getElementById('darkbtnl').addEventListener('click', () => setTheme('dark'));
-    document.getElementById('lightbtnl').addEventListener('click', () => setTheme('light'));
+    document.getElementById('winterbtnl').addEventListener('click', () => setTheme('wintertimer'));
+    document.getElementById('springbtnl').addEventListener('click', () => setTheme('springtimer'));
+    document.getElementById('summerbtnl').addEventListener('click', () => setTheme('summertimer'));
+    document.getElementById('autumnbtnl').addEventListener('click', () => setTheme('autumntimer'));
+    document.getElementById('darkbtnl').addEventListener('click', () => setTheme('darktimer'));
+    document.getElementById('lightbtnl').addEventListener('click', () => setTheme('lighttimer'));
+});
+
+function setquiz(quiz) {
+  // hide all theme divs
+    document.querySelectorAll('.winterQuiz, .springQuiz, .summerQuiz, .autumnQuiz, .darkQuiz, .lightQuiz').forEach(div => {
+        div.classList.add('hidden');
+    });
+
+  // show the active theme div
+    if (quiz === 'winterQuiz') {
+        document.querySelector('.winterQuiz').classList.remove('hidden');
+    } else if (quiz === 'springQuiz') {
+        document.querySelector('.springQuiz').classList.remove('hidden');
+    } else if (quiz === 'summerQuiz') {
+        document.querySelector('.summerQuiz').classList.remove('hidden');
+    } else if (quiz === 'autumnQuiz') {
+        document.querySelector('.autumnQuiz').classList.remove('hidden');
+    } else if (quiz === 'darkQuiz') {
+        document.querySelector('.darkQuiz').classList.remove('hidden');
+    } else if (quiz === 'lightQuiz') {
+        document.querySelector('.lightQuiz').classList.remove('hidden');
+    }
+}
+// Set up event listeners after DOM content is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // wire button clicks
+    document.getElementById('quizmewi').addEventListener('click', () => setTheme('winterQuiz'));
+    document.getElementById('quizmesp').addEventListener('click', () => setTheme('springQuiz'));
+    document.getElementById('quizmesu').addEventListener('click', () => setTheme('summerQuiz'));
+    document.getElementById('quizmeau').addEventListener('click', () => setTheme('autumnQuiz'));
+    document.getElementById('quizmed').addEventListener('click', () => setTheme('darkQuiz'));
+    document.getElementById('quizmel').addEventListener('click', () => setTheme('lightQuiz'));
 });

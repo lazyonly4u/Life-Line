@@ -22,6 +22,7 @@
   display: none;
 }
 
+
 /*winter buttons*/
 .winterbtnwi {width: 10%; top: 133%; right: 15%; transform: rotate(1deg)}
 .springbtnwi {width: 10%; top: 133%; right: 26.5%;}
@@ -29,6 +30,19 @@
 .autumnbtnwi {width: 9%; top: 132.7%; right: 52%;}
 .darkbtnwi {width: 10%; top: 133%; right: 63%;}
 .lightbtnwi {width: 10%; top: 133%; right: 75%;}
+
+/*winter quiz*/
+.winterQuiz{
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
+.hidden {
+  display: none;
+}
 
 /*spring*/
 .springbgtimer {
@@ -48,6 +62,16 @@
 .darkbtnsp {width: 10%; top: 133%; right: 63%;}
 .lightbtnsp {width: 10%; top: 133%; right: 75%;}
 
+/*spring quiz*/
+.SpringQuiz{
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
+
 /*summer*/
 .summerbgtimer {
     position: absolute;
@@ -66,6 +90,16 @@
 .darkbtnsu {width: 10%; top: 133%; right: 63%;}
 .lightbtnsu {width: 10%; top: 133%; right: 75%;}
 
+/*summer quiz*/
+.SummerQuiz{
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
+
 /*autumn*/
 .autumnbgtimer {
     position: absolute;
@@ -82,6 +116,16 @@
 .autumnbtnau {width: 9%; top: 132.7%; right: 52%;}
 .darkbtnau {width: 10%; top: 133%; right: 63%;}
 .lightbtnau {width: 10%; top: 133%; right: 75%;}
+
+/*autumn quiz*/
+.AutumnQuiz{
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
 
 /*dark*/
 .darkbgtimer {
@@ -100,6 +144,16 @@
 .darkbtnd {width: 10%; top: 133%; right: 63%;}
 .lightbtnd {width: 10%; top: 133%; right: 75%;}
 
+/*dark quiz*/
+.DarkQuiz{
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
+
 /*light*/
 .lightbgtimer {
     position: absolute;
@@ -117,6 +171,15 @@
 .darkbtnl {width: 10%; top: 133%; right: 63%;}
 .lightbtnl {width: 10%; top: 133%; right: 75%;}
 
+/*light quiz*/
+.LightQuiz{
+    position: absolute;
+    width: 99.5%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+    z-index: 0;
+}
 
 
 /* circle buttons */
@@ -130,7 +193,7 @@
     top: 3%;
     left: 2%;
     width: 130px;
-    height: 130px;
+    height: 175px;
     border: none;
     border-radius: 100px;
     z-index: 5;
@@ -150,7 +213,7 @@
 .circle-buttond.expanded,
 .circle-buttonl.expanded,
 .circle-buttonwi.expanded {
-    height: 740px;
+    height: 680px;
 }
 
 
@@ -160,166 +223,129 @@
 .winterbtnpt,
 .winterbtned,
 .winterbtnad,
-.winterbtnqu,
-.winterbtnme,
 .springbtnde,
 .springbtnan,
 .springbtnpt,
 .springbtned,
 .springbtnad,
-.springbtnqu,
-.springbtnme,
 .summerbtnde,
 .summerbtnan,
 .summerbtnpt,
 .summerbtned,
 .summerbtnad,
-.summerbtnqu,
-.summerbtnme,
 .autumnbtnde,
 .autumnbtnan,
 .autumnbtnpt,
 .autumnbtned,
 .autumnbtnad,
-.autumnbtnqu,
 .autumnbtnme,
 .darkbtnde,
 .darkbtnan,
 .darkbtnpt,
 .darkbtned,
 .darkbtnad,
-.darkbtnqu,
-.darkbtnme,
 .lightbtnde,
 .lightbtnan,
 .lightbtnpt,
 .lightbtned,
-.lightbtnad,
-.lightbtnqu,
-.lightbtnme {
+.lightbtnad{
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-.winterbtnme { width: 7%; top: 4%; left: 2.75%;transform: rotate(1deg)}
-.winterbtnde {width: 7%; top: 17%; left: 2.75%; transform: rotate(30deg)}
-.winterbtnan {width: 7%; top: 30%; left: 2.75%;transform: rotate(1deg)}
-.winterbtnpt {width: 7%; top: 43%; left: 2.75%;transform: rotate(30deg)}
-.winterbtned {width: 7%; top: 56%; left: 2.75%;transform: rotate(1deg)}
-.winterbtnad {width: 7%; top: 69%; left: 2.75%;transform: rotate(30deg)}
-.winterbtnqu {width: 7%; top: 82%; left: 2.75%;transform: rotate(1deg)}
-.springbtnme { width: 6%; top: 4%; left: 3%;transform: rotate(1deg)}
-.springbtnde {width: 6%; top: 17%; left: 3%; transform: rotate(30deg)}
-.springbtnan {width: 6%; top: 30%; left: 3%;transform: rotate(1deg)}
-.springbtnpt {width: 6%; top: 43%; left: 3%;transform: rotate(30deg)}
-.springbtned {width: 6%; top: 56%; left: 3%;transform: rotate(1deg)}
-.springbtnad {width: 6%; top: 69%; left: 3%;transform: rotate(30deg)}
-.springbtnqu {width: 6%; top: 82%; left: 3%;transform: rotate(1deg)}
-.summerbtnme { width: 7%; top: 5%; left: 2.75%;transform: rotate(1deg)}
-.summerbtnde {width: 7%; top: 18%; left: 2.75%; transform: rotate(180deg)}
-.summerbtnan {width: 7%; top: 31%; left: 2.75%;transform: rotate(1deg)}
-.summerbtnpt {width: 7%; top: 44%; left: 2.75%;transform: rotate(180deg)}
-.summerbtned {width: 7%; top: 57%; left: 2.75%;transform: rotate(1deg)}
-.summerbtnad {width: 7%; top: 70%; left: 2.75%;transform: rotate(180deg)}
-.summerbtnqu {width: 7%; top: 83%; left: 2.75%;transform: rotate(1deg)}
-.autumnbtnme { width: 6%; top: 4%; left: 2.75%;transform: rotate(1deg)}
-.autumnbtnde {width: 6%; top: 17%; left: 2.75%; transform: rotateY(150deg)}
-.autumnbtnan {width: 6%; top: 30%; left: 2.75%;transform: rotate(1deg)}
-.autumnbtnpt {width: 6%; top: 43%; left: 2.75%;transform: rotateY(150deg)}
-.autumnbtned {width: 6%; top: 56%; left: 2.75%;transform: rotate(1deg)}
-.autumnbtnad {width: 6%; top: 69%; left: 2.75%;transform: rotateY(150deg)}
-.autumnbtnqu {width: 6%; top: 82%; left: 2.75%;transform: rotate(1deg)}
-.darkbtnme { width: 6%; top: 5%; left: 3%;transform: rotate(1deg)}
-.darkbtnde {width: 6%; top: 18%; left: 3%; transform: rotate(15deg)}
-.darkbtnan {width: 6%; top: 31%; left: 3%;transform: rotate(1deg)}
-.darkbtnpt {width: 6%; top: 44%; left: 3%;transform: rotate(15deg)}
-.darkbtned {width: 6%; top: 57%; left: 3%;transform: rotate(1deg)}
-.darkbtnad {width: 6%; top: 70%; left: 3%;transform: rotate(15deg)}
-.darkbtnqu {width: 6%; top: 83%; left: 3%;transform: rotate(1deg)}
-.lightbtnme { width: 6%; top: 5%; left: 3%;transform: rotate(1deg)}
-.lightbtnde {width: 6%; top: 18%; left: 3%; transform: rotate(15deg)}
-.lightbtnan {width: 6%; top: 31%; left: 3%;transform: rotate(1deg)}
-.lightbtnpt {width: 6%; top: 44%; left: 3%;transform: rotate(15deg)}
-.lightbtned {width: 6%; top: 57%; left: 3%;transform: rotate(1deg)}
-.lightbtnad {width: 6%; top: 70%; left: 3%;transform: rotate(15deg)}
-.lightbtnqu {width: 6%; top: 83%; left: 3%;transform: rotate(1deg)}
+.winterbtnde {width: 7%; top: 20%; left: 2.75%; transform: rotate(30deg)}
+.winterbtnan {width: 7%; top: 33%; left: 2.75%;transform: rotate(1deg)}
+.winterbtnpt {width: 7%; top: 46%; left: 2.75%;transform: rotate(30deg)}
+.winterbtned {width: 7%; top: 59%; left: 2.75%;transform: rotate(1deg)}
+.winterbtnad {width: 7%; top: 72%; left: 2.75%;transform: rotate(30deg)}
+.springbtnde {width: 6%; top: 20%; left: 3.25%; transform: rotate(40deg)}
+.springbtnan {width: 6%; top: 33%; left: 3.25%;transform: rotate(1deg)}
+.springbtnpt {width: 6%; top: 46%; left: 3.25%;transform: rotate(40deg)}
+.springbtned {width: 6%; top: 59%; left: 3.25%;transform: rotate(1deg)}
+.springbtnad {width: 6%; top: 72%; left: 3.25%;transform: rotate(40deg)}
+.summerbtnde {width: 7%; top: 20%; left: 2.75%; transform: rotate(180deg)}
+.summerbtnan {width: 7%; top: 33%; left: 2.75%;transform: rotate(1deg)}
+.summerbtnpt {width: 7%; top: 46%; left: 2.75%;transform: rotate(180deg)}
+.summerbtned {width: 7%; top: 59%; left: 2.75%;transform: rotate(1deg)}
+.summerbtnad {width: 7%; top: 72%; left: 2.75%;transform: rotate(180deg)}
+.autumnbtnde {width: 6%; top: 20%; left: 3.25%; transform: rotateY(150deg)}
+.autumnbtnan {width: 6%; top: 33%; left: 3.25%;transform: rotate(1deg)}
+.autumnbtnpt {width: 6%; top: 46%; left: 3.25%;transform: rotateY(150deg)}
+.autumnbtned {width: 6%; top: 59%; left: 3.25%;transform: rotate(1deg)}
+.autumnbtnad {width: 6%; top: 72%; left: 3.25%;transform: rotateY(150deg)}
+.darkbtnde {width: 6%; top: 20%; left: 3.25%; transform: rotate(15deg)}
+.darkbtnan {width: 6%; top: 33%; left: 3.25%;transform: rotate(1deg)}
+.darkbtnpt {width: 6%; top: 46%; left: 3.25%;transform: rotate(15deg)}
+.darkbtned {width: 6%; top: 59%; left: 3.25%;transform: rotate(1deg)}
+.darkbtnad {width: 6%; top: 72%; left: 3.25%;transform: rotate(15deg)}
+.lightbtnde {width: 6%; top: 20%; left: 3.25%; transform: rotate(15deg)}
+.lightbtnan {width: 6%; top: 33%; left: 3.25%;transform: rotate(1deg)}
+.lightbtnpt {width: 6%; top: 46%; left: 3.25%;transform: rotate(15deg)}
+.lightbtned {width: 6%; top: 59%; left: 3.25%;transform: rotate(1deg)}
+.lightbtnad {width: 6%; top: 72%; left: 3.25%;transform: rotate(15deg)}
 
 
-.winterbtnlook,
-.springbtnlook,
-.summerbtnlook,
-.autumnbtnlook,
-.darkbtnlook,
-.lightbtnlook { 
+
+.winterbtnme,
+.springbtnme,
+.summerbtnme,
+.autumnbtnme,
+.darkbtnme,
+.lightbtnme { 
     opacity: 1;
     pointer-events: none;
     transition: opacity 0.3s ease;
     transform: rotate(1deg)
 }
-.winterbtnlook {width: 7%; left: 2.75%; top: 4%;}
-.springbtnlook {width: 6%; left: 2.95%; top: 4%;}
-.summerbtnlook {width: 7%; left: 2.75%; top: 5%;}
-.autumnbtnlook {width: 6%; left: 2.75%; top: 4%;}
-.darkbtnlook {width: 6%; left: 3%; top: 5%;}
-.lightbtnlook {width: 6%; left: 3%; top: 5%;}
+.winterbtnme {width: 7%; left: 2.75%; top: 7%;}
+.springbtnme {width: 6%; left: 3.25%; top: 7%;}
+.summerbtnme {width: 7%; left: 2.75%; top: 7%;}
+.autumnbtnme {width: 6%; left: 3.25%; top: 7%;}
+.darkbtnme {width: 6%; left: 3.25%; top: 7%;}
+.lightbtnme {width: 6%; left: 3.25%; top: 7%;}
 
 /* Show menu buttons only when circle is expanded */
-.winter .circle-buttonwi.expanded ~ .winterbtnde,
-.winter .circle-buttonwi.expanded ~ .winterbtnan,
-.winter .circle-buttonwi.expanded ~ .winterbtnpt,
-.winter .circle-buttonwi.expanded ~ .winterbtned,
-.winter .circle-buttonwi.expanded ~ .winterbtnad,
-.winter .circle-buttonwi.expanded ~ .winterbtnqu, 
-.winter .circle-buttonwi.expanded ~ .winterbtnme,
-.spring .circle-buttonsp.expanded ~ .springbtnde,
-.spring .circle-buttonsp.expanded ~ .springbtnan,
-.spring .circle-buttonsp.expanded ~ .springbtnpt,
-.spring .circle-buttonsp.expanded ~ .springbtned,
-.spring .circle-buttonsp.expanded ~ .springbtnad,
-.spring .circle-buttonsp.expanded ~ .springbtnqu,
-.spring .circle-buttonsp.expanded ~ .springbtnme,
-.summer .circle-buttonsu.expanded ~ .summerbtnde,
-.summer .circle-buttonsu.expanded ~ .summerbtnan,
-.summer .circle-buttonsu.expanded ~ .summerbtnpt,
-.summer .circle-buttonsu.expanded ~ .summerbtned,
-.summer .circle-buttonsu.expanded ~ .summerbtnad,
-.summer .circle-buttonsu.expanded ~ .summerbtnqu,
-.summer .circle-buttonsu.expanded ~ .summerbtnme,
-.autumn .circle-buttonau.expanded ~ .autumnbtnde,
-.autumn .circle-buttonau.expanded ~ .autumnbtnan,
-.autumn .circle-buttonau.expanded ~ .autumnbtnpt,
-.autumn .circle-buttonau.expanded ~ .autumnbtned,
-.autumn .circle-buttonau.expanded ~ .autumnbtnad,
-.autumn .circle-buttonau.expanded ~ .autumnbtnqu,
-.autumn .circle-buttonau.expanded ~ .autumnbtnme,
-.dark .circle-buttond.expanded ~ .darkbtnde,
-.dark .circle-buttond.expanded ~ .darkbtnan,
-.dark .circle-buttond.expanded ~ .darkbtnpt,
-.dark .circle-buttond.expanded ~ .darkbtned,
-.dark .circle-buttond.expanded ~ .darkbtnad,
-.dark .circle-buttond.expanded ~ .darkbtnqu,
-.dark .circle-buttond.expanded ~ .darkbtnme,
-.light .circle-buttonl.expanded ~ .lightbtnde,
-.light .circle-buttonl.expanded ~ .lightbtnan,
-.light .circle-buttonl.expanded ~ .lightbtnpt,
-.light .circle-buttonl.expanded ~ .lightbtned,
-.light .circle-buttonl.expanded ~ .lightbtnad,
-.light .circle-buttonl.expanded ~ .lightbtnqu,
-.light .circle-buttonl.expanded ~ .lightbtnme {
+.wintertimer .circle-buttonwi.expanded ~ .winterbtnde,
+.wintertimer .circle-buttonwi.expanded ~ .winterbtnan,
+.wintertimer .circle-buttonwi.expanded ~ .winterbtnpt,
+.wintertimer .circle-buttonwi.expanded ~ .winterbtned,
+.wintertimer .circle-buttonwi.expanded ~ .winterbtnad,
+.wintertimer .circle-buttonwi.expanded ~ .winterbtnme,
+.springtimer .circle-buttonsp.expanded ~ .springbtnde,
+.springtimer .circle-buttonsp.expanded ~ .springbtnan,
+.springtimer .circle-buttonsp.expanded ~ .springbtnpt,
+.springtimer .circle-buttonsp.expanded ~ .springbtned,
+.springtimer .circle-buttonsp.expanded ~ .springbtnad,
+.springtimer .circle-buttonsp.expanded ~ .springbtnme,
+.summertimer .circle-buttonsu.expanded ~ .summerbtnde,
+.summertimer .circle-buttonsu.expanded ~ .summerbtnan,
+.summertimer .circle-buttonsu.expanded ~ .summerbtnpt,
+.summertimer .circle-buttonsu.expanded ~ .summerbtned,
+.summertimer .circle-buttonsu.expanded ~ .summerbtnad,
+.summertimer .circle-buttonsu.expanded ~ .summerbtnme,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtnde,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtnan,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtnpt,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtned,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtnad,
+.autumntimer .circle-buttonau.expanded ~ .autumnbtnme,
+.darktimer .circle-buttond.expanded ~ .darkbtnde,
+.darktimer .circle-buttond.expanded ~ .darkbtnan,
+.darktimer .circle-buttond.expanded ~ .darkbtnpt,
+.darktimer .circle-buttond.expanded ~ .darkbtned,
+.darktimer .circle-buttond.expanded ~ .darkbtnad,
+.darktimer .circle-buttond.expanded ~ .darkbtnme,
+.lighttimer .circle-buttonl.expanded ~ .lightbtnde,
+.lighttimer .circle-buttonl.expanded ~ .lightbtnan,
+.lighttimer .circle-buttonl.expanded ~ .lightbtnpt,
+.lighttimer .circle-buttonl.expanded ~ .lightbtned,
+.lighttimer .circle-buttonl.expanded ~ .lightbtnad,
+.lighttimer .circle-buttonl.expanded ~ .lightbtnme {
   opacity: 1;
   pointer-events: auto;
 }
 
-.springbntlook ~.circle-buttonsp.expanded,
-.winterbntlook ~.circle-buttonwi.expanded,
-.summerbntlook ~.circle-buttonsu.expanded,
-.autumnbntlook ~.circle-buttonau.expanded,
-.darkbntlook ~.circle-buttond.expanded,
-.lightbntlook ~.circle-buttonl.expanded {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
+
 
 
 /* settings buttons */
