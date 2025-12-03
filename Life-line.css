@@ -278,7 +278,8 @@
 .lightbtnad{
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.60s ease;
+
 }
 .winterbtnde {width: 7%; top: 12%; left: 2.75%; transform: rotate(30deg)}
 .winterbtnan {width: 7%; top: 21%; left: 2.75%;transform: rotate(1deg)}
@@ -321,7 +322,7 @@
 .lightbtnme { 
     opacity: 1;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.60s ease;
     transform: rotate(1deg)
 }
 .winterbtnme {width: 7%; left: 2.75%; top: 3.5%;}
@@ -424,8 +425,41 @@
 .quizmesp { background-color: rgba(255, 255, 255, 0.5); color: rgba(155, 92, 103, 1);}
 .quizmesu { background-color: rgba(255, 255, 255, 0.5); color: rgba(228, 118, 17, 1);}
 .quizmeau { background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);}
-.quizmed  { background-color: rgba(255, 255, 255, 0.5); color: rgba(2, 40, 43, 1);}
+.quizmed  { background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);}
 .quizmel  { background-color: rgba(0,0,0,0.5); color: rgb(255, 255, 255);}
 
 
-
+.deintro,
+.detimer,
+.deguide,
+.desupport,
+.infoboxad,
+.antimer,
+.anguide,
+.ansupport,
+.ptintro,
+.pttimer,
+.ptguide,
+.ptsupport,
+.edintro,
+.edtimer,
+.edguide,
+.edsupport,
+.adintro,
+.adtimer,
+.adguide,
+.adsupport{
+    position: absolute;
+    bottom: 5px;
+    left: 32.1%;
+    transform: translateX(-50%);
+    width: 32.1%;
+    height: 22%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: 1px;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+}

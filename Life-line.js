@@ -253,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // show this quiz, hide this timer
         ADHD.classList.remove('hidden');
         timer.classList.add('hidden');
+        
       });
     }
   });
