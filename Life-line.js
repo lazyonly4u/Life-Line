@@ -123,17 +123,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const deMap = [
+  const deMap = [
         ['.winterbtnde','.winterDepression','.wintertimer'],
         ['.springbtnde','.springDepression','.springtimer'],
         ['.summerbtnde','.summerDepression','.summertimer'],
         ['.autumnbtnde','.autumnDepression','.autumntimer'],
         ['.darkbtnde','.darkDepression','.darktimer'],
         ['.lightbtnde','.lightDepression','.lighttimer'],
-  ];
+   ];
 
   deMap.forEach(([btnSel, depressionSel, timerSel]) => {
     const btn = document.querySelector(btnSel);
@@ -142,20 +139,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btn && Depression && timer) {
       btn.addEventListener('click', () => {
-        // hide all quizzes
         document.querySelectorAll('.winterDepression, .springDepression, .summerDepression, .autumnDepression, .darkDepression, .lightDepression')
           .forEach(q => q.classList.add('hidden'));
-        // show this quiz, hide this timer
         Depression.classList.remove('hidden');
         timer.classList.add('hidden');
       });
     }
   });
-
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const anMap = [
+  const anMap = [
         ['.winterbtnan','.winterAnxiety','.wintertimer'],
         ['.springbtnan','.springAnxiety','.springtimer'],
         ['.summerbtnan','.summerAnxiety','.summertimer'],
@@ -169,19 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.querySelector(timerSel);
     if (btn && Anxiety && timer) {
       btn.addEventListener('click', () => {
-        // hide all quizzes
         document.querySelectorAll('.winterAnxiety, .springAnxiety, .summerAnxiety, .autumnAnxiety, .darkAnxiety, .lightAnxiety')
           .forEach(an => an.classList.add('hidden'));
-        // show this quiz, hide this timer
         Anxiety.classList.remove('hidden');
         timer.classList.add('hidden');
       });
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const ptMap = [
+  const ptMap = [
         ['.winterbtnpt','.winterPTSD','.wintertimer'],
         ['.springbtnpt','.springPTSD','.springtimer'],
         ['.summerbtnpt','.summerPTSD','.summertimer'],
@@ -195,19 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.querySelector(timerSel);
     if (btn && PTSD && timer) {
       btn.addEventListener('click', () => {
-        // hide all quizzes
         document.querySelectorAll('.winterPTSD, .springPTSD, .summerPTSD, .autumnPTSD, .darkPTSD, .lightPTSD')
           .forEach(pt => pt.classList.add('hidden'));
-        // show this quiz, hide this timer
         PTSD.classList.remove('hidden');
         timer.classList.add('hidden');
       });
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const edMap = [
+  const edMap = [
         ['.winterbtned','.winterED','.wintertimer'],
         ['.springbtned','.springED','.springtimer'],
         ['.summerbtned','.summerED','.summertimer'],
@@ -221,19 +202,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.querySelector(timerSel);
     if (btn && ED && timer) {
       btn.addEventListener('click', () => {
-        // hide all quizzes
         document.querySelectorAll('.winterED, .springED, .summerED, .autumnED, .darkED, .lightED')
           .forEach(ed => ed.classList.add('hidden'));
-        // show this quiz, hide this timer
         ED.classList.remove('hidden');
         timer.classList.add('hidden');
       });
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const adMap = [
+  const adMap = [
         ['.winterbtnad','.winterADHD','.wintertimer'],
         ['.springbtnad','.springADHD','.springtimer'],
         ['.summerbtnad','.summerADHD','.summertimer'],
@@ -247,10 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.querySelector(timerSel);
     if (btn && ADHD && timer) {
       btn.addEventListener('click', () => {
-        // hide all quizzes
         document.querySelectorAll('.winterADHD, .springADHD, .summerADHD, .autumnADHD, .darkADHD, .lightADHD')
           .forEach(ad => ad.classList.add('hidden'));
-        // show this quiz, hide this timer
         ADHD.classList.remove('hidden');
         timer.classList.add('hidden');
         
@@ -258,3 +232,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
