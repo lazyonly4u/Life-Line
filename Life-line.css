@@ -423,32 +423,44 @@
 }
 .quizmewi { background-color: rgba(255, 255, 255, 0.5); color: rgba(2, 40, 43, 1);}
 .quizmesp { background-color: rgba(255, 255, 255, 0.5); color: rgba(155, 92, 103, 1);}
-.quizmesu { background-color: rgba(255, 255, 255, 0.5); color: rgba(228, 118, 17, 1);}
-.quizmeau { background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);}
+.quizmesu { background-color: rgba(255, 255, 255, 0.5); color: rgb(255, 255, 255);}
+.quizmeau { background-color: rgba(255, 255, 255, 0.5); color: rgb(77, 40, 39);}
 .quizmed  { background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);}
 .quizmel  { background-color: rgba(0,0,0,0.5); color: rgb(255, 255, 255);}
 
-
+.quizintro,
+.quizinstructions,
+.depressionquestions,
+.anxietyquestions,
+.ptsdquestions,
+.edquestions,
+.adhdquestions,
 .deintro,
 .detimer,
 .deguide,
 .desupport,
+.delifeline,
 .infoboxad,
+.anintro,
 .antimer,
 .anguide,
 .ansupport,
+.anlifeline,
 .ptintro,
 .pttimer,
 .ptguide,
 .ptsupport,
+.ptlifeline,
 .edintro,
 .edtimer,
 .edguide,
 .edsupport,
+.edlifeline,
 .adintro,
 .adtimer,
 .adguide,
-.adsupport{
+.adsupport,
+.adlifeline {
     position: absolute;
     bottom: 5px;
     left: 32.1%;
@@ -463,40 +475,400 @@
     z-index: 5;
     font-family: 'Poppins', sans-serif;
 }
-
+.winterQuiz .quizintro,
+.winterQuiz .quizinstructions,
+.winterQuiz .depressionquestions,
+.winterQuiz .anxietyquestions,
+.winterQuiz .ptsdquestions,
+.winterQuiz .edquestions,
+.winterQuiz .adhdquestions,
 .winterDepression .deintro,
 .winterDepression .detimer,
 .winterDepression .deguide,
 .winterDepression .desupport,
+.winterDepression .delifeline,
 .winterAnxiety .anintro,
 .winterAnxiety .antimer,
 .winterAnxiety .anguide,
 .winterAnxiety .ansupport,
+.winterAnxiety .anlifeline,
 .winterPTSD .ptintro,
 .winterPTSD .pttimer,
 .winterPTSD .ptguide,
 .winterPTSD .ptsupport,
+.winterPTSD .ptlifeline,
 .winterED .edintro,
 .winterED .edtimer,
 .winterED .edguide,
 .winterED .edsupport,
+.winterED .edlifeline,
 .winterADHD .adintro,
 .winterADHD .adtimer,
 .winterADHD .adguide,
-.winterADHD .adsupport {
+.winterADHD .adsupport,
+.winterADHD .adlifeline,
+.springQuiz .quizintro,
+.springQuiz .quizinstructions,
+.springQuiz .depressionquestions,
+.springQuiz .anxietyquestions,
+.springQuiz .ptsdquestions,
+.springQuiz .edquestions,
+.springQuiz .adhdquestions,
+.springDepression .deintro,
+.springDepression .detimer,
+.springDepression .deguide,
+.springDepression .desupport,
+.springDepression .delifeline,
+.springAnxiety .anintro,
+.springAnxiety .antimer,
+.springAnxiety .anguide,
+.springAnxiety .ansupport,
+.springAnxiety .anlifeline,
+.springPTSD .ptintro,
+.springPTSD .pttimer,
+.springPTSD .ptguide,
+.springPTSD .ptsupport,
+.springPTSD .ptlifeline,
+.springED .edintro,
+.springED .edtimer,
+.springED .edguide,
+.springED .edsupport,
+.springED .edlifeline,
+.springADHD .adintro,
+.springADHD .adtimer,
+.springADHD .adguide,
+.springADHD .adsupport,
+.springADHD .adlifeline,
+.summerQuiz .quizintro,
+.summerQuiz .quizinstructions,
+.summerQuiz .depressionquestions,
+.summerQuiz .anxietyquestions,
+.summerQuiz .ptsdquestions,
+.summerQuiz .edquestions,
+.summerQuiz .adhdquestions,
+.summerDepression .deintro,
+.summerDepression .detimer,
+.summerDepression .deguide,
+.summerDepression .desupport,
+.summerDepression .delifeline,
+.summerAnxiety .anintro,
+.summerAnxiety .antimer,
+.summerAnxiety .anguide,
+.summerAnxiety .ansupport,
+.summerAnxiety .anlifeline,
+.summerPTSD .ptintro,
+.summerPTSD .pttimer,
+.summerPTSD .ptguide,
+.summerPTSD .ptsupport,
+.summerPTSD .ptlifeline,
+.summerED .edintro,
+.summerED .edtimer,
+.summerED .edguide,
+.summerED .edsupport,
+.summerED .edlifeline,
+.summerADHD .adintro,
+.summerADHD .adtimer,
+.summerADHD .adguide,
+.summerADHD .adsupport,
+.summerADHD .adlifeline,
+.autumnQuiz .quizintro,
+.autumnQuiz .quizinstructions,
+.autumnQuiz .depressionquestions,
+.autumnQuiz .anxietyquestions,
+.autumnQuiz .ptsdquestions,
+.autumnQuiz .edquestions,
+.autumnQuiz .adhdquestions,
+.autumnDepression .deintro,
+.autumnDepression .detimer,
+.autumnDepression .deguide,
+.autumnDepression .desupport,
+.autumnDepression .delifeline,
+.autumnAnxiety .anintro,
+.autumnAnxiety .antimer,
+.autumnAnxiety .anguide,
+.autumnAnxiety .ansupport,
+.autumnAnxiety .anlifeline,
+.autumnPTSD .ptintro,
+.autumnPTSD .pttimer,
+.autumnPTSD .ptguide,
+.autumnPTSD .ptsupport,
+.autumnPTSD .ptlifeline,
+.autumnED .edintro,
+.autumnED .edtimer,
+.autumnED .edguide,
+.autumnED .edsupport,
+.autumnED .edlifeline,
+.autumnADHD .adintro,
+.autumnADHD .adtimer,
+.autumnADHD .adguide,
+.autumnADHD .adsupport,
+.autumnADHD .adlifeline,
+.darkQuiz .quizintro,
+.darkQuiz .quizinstructions,
+.darkQuiz .depressionquestions,
+.darkQuiz .anxietyquestions,
+.darkQuiz .ptsdquestions,
+.darkQuiz .edquestions,
+.darkQuiz .adhdquestions,
+.darkDepression .deintro,
+.darkDepression .detimer,
+.darkDepression .deguide,
+.darkDepression .desupport,
+.darkDepression .delifeline,
+.darkAnxiety .anintro,
+.darkAnxiety .antimer,
+.darkAnxiety .anguide,
+.darkAnxiety .ansupport,
+.darkAnxiety .anlifeline,
+.darkPTSD .ptintro,
+.darkPTSD .pttimer,
+.darkPTSD .ptguide,
+.darkPTSD .ptsupport,
+.darkPTSD .ptlifeline,
+.darkED .edintro,
+.darkED .edtimer,
+.darkED .edguide,
+.darkED .edsupport,
+.darkED .edlifeline,
+.darkADHD .adintro,
+.darkADHD .adtimer,
+.darkADHD .adguide,
+.darkADHD .adsupport,
+.darkADHD .adlifeline,
+.lightQuiz .quizintro,
+.lightQuiz .quizinstructions,
+.lightQuiz .depressionquestions,
+.lightQuiz .anxietyquestions,
+.lightQuiz .ptsdquestions,
+.lightQuiz .edquestions,
+.lightQuiz .adhdquestions,
+.lightDepression .deintro,
+.lightDepression .detimer,
+.lightDepression .deguide,
+.lightDepression .desupport,
+.lightDepression .delifeline,
+.lightAnxiety .anintro,
+.lightAnxiety .antimer,
+.lightAnxiety .anguide,
+.lightAnxiety .ansupport,
+.lightAnxiety .anlifeline,
+.lightPTSD .ptintro,
+.lightPTSD .pttimer,
+.lightPTSD .ptguide,
+.lightPTSD .ptsupport,
+.lightPTSD .ptlifeline,
+.lightED .edintro,
+.lightED .edtimer,
+.lightED .edguide,
+.lightED .edsupport,
+.lightED .edlifeline,
+.lightADHD .adintro,
+.lightADHD .adtimer,
+.lightADHD .adguide,
+.lightADHD .adsupport,
+.lightADHD .adlifeline {
   display: block;     
   position: absolute;
   z-index: 5;            
-  left: 50%;
-  width: 80%;
+  left: 50%; 
+  width: 85%;
   height:auto;
   background: rgba(255,255,255,0.2);
-  color: #000;
-
   font-size: 20px;
+  padding: 30px;
 }
-.winterDepression .deintro  { top: 10%;   box-sizing: border-box; }
-.winterDepression .detimer  { top: 20%;   box-sizing: border-box;}
-.winterDepression .deguide  { top: 50%;   box-sizing: border-box;}
-.winterDepression .desupport{ top: 70%;   box-sizing: border-box;}
+.winterQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color: #02282b;}
+.winterQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #02282b;}
+.winterQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #02282b;}
+.winterQuiz .anxietyquestions{ top: 2050px;  height: 350px;  box-sizing: border-box;color: #02282b;}
+.winterQuiz .ptsdquestions { top:  2450px;  height: 350px;  box-sizing: border-box;color: #02282b;}
+.winterQuiz .edquestions { top:  2850px;  height: 350px;   box-sizing: border-box;color:#02282b;}
+.winterQuiz .adhdquestions { top: 3250px;  height: 350px;  box-sizing: border-box;color: #02282b;}
+.winterDepression .deintro  { top: 1100px;  height: 160px;  box-sizing: border-box; color: #02282b;}
+.winterDepression .detimer  { top: 1400px;  height: 140px;  box-sizing: border-box;color: #02282b;}
+.winterDepression .deguide  { top: 1700px;  height: 205px;  box-sizing: border-box;color: #02282b;}
+.winterDepression .desupport{ top: 2000px;  height: 210px;  box-sizing: border-box;color: #02282b;}
+.winterDepression .delifeline { top:  2300px;  height: 450px;  box-sizing: border-box;color: #02282b;}
+.winterAnxiety .anintro { top: 1100px; height: 160px;   box-sizing: border-box; color: #02282b;}
+.winterAnxiety .antimer { top: 1400px; height: 140px;   box-sizing: border-box;color: #02282b;}
+.winterAnxiety .anguide { top:1700px; height: 355px;   box-sizing:border-box;color:#02282b;}
+.winterAnxiety .ansupport { top: 2000px; height: 180px;   box-sizing: border-box;color: #02282b;}
+.winterAnxiety .anlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color: #02282b;}
+.winterPTSD .ptintro { top: 1100px;  height: 180px;  box-sizing: border-box; color: #02282b;}
+.winterPTSD .pttimer { top: 1400px;  height: 160px;  box-sizing: border-box;color: #02282b;}
+.winterPTSD .ptguide { top: 1700px;  height: 235px;  box-sizing: border-box;color: #02282b;}
+.winterPTSD .ptsupport { top: 2000px;  height: 185px;  box-sizing: border-box;color: #02282b;}
+.winterPTSD .ptlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color: #02282b;}
+.winterED .edintro { top: 1100px; height: 160px;   box-sizing:border-box; color:#02282b;}
+.winterED .edtimer { top: 1400px;   height:140px;   box-sizing:border-box;color:#02282b;}
+.winterED .edguide { top: 1700px;  height: 235px;   box-sizing: border-box;color:#02282b;}
+.winterED .edsupport { top: 2000px;  height: 185px;   box-sizing: border-box;color:#02282b;}
+.winterED .edlifeline { top:  2300px; height: 430px;   box-sizing: border-box;color:#02282b;}
+.winterADHD .adintro { top: 1100px; height: 160px;   box-sizing:border-box; color:#02282b;}
+.winterADHD .adtimer { top: 1400px;  height: 145px;   box-sizing: border-box;color:#02282b;}
+.winterADHD .adguide { top: 1700px;  height: 235px;   box-sizing: border-box;color:#02282b;}
+.winterADHD .adsupport { top: 2000px;  height: 185px;   box-sizing: border-box;color:#02282b;}
+.winterADHD .adlifeline { top: 2300px; height: 430px;   box-sizing: border-box;color:#02282b;}
+.springQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color: #9f5867;}
+.springQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #9f5867;}
+.springQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #9f5867;}
+.springQuiz .anxietyquestions{ top: 2050px;  height: 350px;  box-sizing: border-box;color: #9f5867;}
+.springQuiz .ptsdquestions { top:  2450px;  height: 350px;  box-sizing: border-box;color: #9f5867;}
+.springQuiz .edquestions { top:  2850px;  height: 350px;   box-sizing: border-box;color:#9f5867;}
+.springQuiz .adhdquestions { top: 3250px;  height: 350px;  box-sizing: border-box;color: #9f5867;}
+.springDepression .deintro  { top: 1100px;  height: 160px;  box-sizing: border-box; color: #9f5867;}
+.springDepression .detimer  { top: 1400px;   height: 140px;   box-sizing:border-box;color:#9f5867;}
+.springDepression .deguide  { top:1700px ;   height:205px ;   box-sizing:border-box;color:#9f5867;}
+.springDepression .desupport{ top: 2000px;  height: 210px;  box-sizing: border-box;color: #9f5867;}
+.springDepression .delifeline { top:  2300px;  height: 450px;  box-sizing: border-box;color: #9f5867;}
+.springAnxiety .anintro { top: 1100px;  height: 160px;  box-sizing: border-box; color: #9f5867;}
+.springAnxiety .antimer { top: 1400px;  height: 140px;   box-sizing: border-box;color: #9f5867;}
+.springAnxiety .anguide { top: 1700px;   height: 250px;   box-sizing: border-box;color: #9f5867;}
+.springAnxiety .ansupport { top: 2000px;  height: 180px;  box-sizing: border-box;color: #9f5867;}
+.springAnxiety .anlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color: #9f5867;}
+.springPTSD .ptintro { top: 1100px;  height: 180px;  box-sizing: border-box; color: #9f5867;}
+.springPTSD .pttimer { top: 1400px;  height: 160px;  box-sizing: border-box;color: #9f5867;}
+.springPTSD .ptguide { top: 1700px;  height: 235px;  box-sizing: border-box;color: #9f5867;}
+.springPTSD .ptsupport { top: 2000px;  height: 185px;  box-sizing: border-box;color: #9f5867;}
+.springPTSD .ptlifeline { top: 2300px;   height: -43%;   box-sizing:border-box;color:#9f5867;}
+.springED .edintro { top: 1100px;   height:160px;   box-sizing:border-box; color:#9f5867;}
+.springED .edtimer { top: 1400px;  height: 140px;   box-sizing: border-box;color: #9f5867;}
+.springED .edguide { top: 1700px;   height: 235px;   box-sizing: border-box;color: #9f5867;}
+.springED .edsupport { top: 2000px;  height: 185px;  box-sizing: border-box;color: #9f5867;}
+.springED .edlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color:#9f5867;}
+.springADHD .adintro { top: 1100px;  height: 160px;  box-sizing: border-box; color:#9f5867;}
+.springADHD .adtimer { top: 1400px;  height: 145px;   box-sizing: border-box;color:#9f5867;}
+.springADHD .adguide { top: 1700px;   height: 235px;   box-sizing: border-box;color:#9f5867;}
+.springADHD .adsupport { top: 2000px; height: 185px;   box-sizing: border-box;color:#9f5867;}
+.springADHD .adlifeline { top: 2300px; height: 430px;  box-sizing: border-box;color:#9f5867;}
+.summerQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff;}
+.summerQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #ffffff;}
+.summerQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #ffffff;}
+.summerQuiz .anxietyquestions{ top: 2050px;  height: 350px;  box-sizing: border-box;color: #ffffff;}
+.summerQuiz .ptsdquestions { top:  2450px;  height: 350px;  box-sizing: border-box;color: #ffffff;}
+.summerQuiz .edquestions { top:  2850px;  height: 350px;   box-sizing: border-box;color:#ffffff;}
+.summerQuiz .adhdquestions { top:  3250px;  height: 350px;  box-sizing: border-box;color: #ffffff;}
+.summerDepression .deintro  { top: 1100px;   height: 160px;   box-sizing: border-box;color: #ffffff }
+.summerDepression .detimer  { top:1400px;   height:140px;   box-sizing:border-box;color:#ffffff}
+.summerDepression .deguide  { top:1700px;   height:205px;   box-sizing:border-box;color:#ffffff}
+.summerDepression .desupport{ top: 2000px; height: 210px; box-sizing: border-box;color: #ffffff}
+.summerDepression .delifeline { top: 2300px;  height: 450px;  box-sizing: border-box;color: #ffffff}
+.summerAnxiety .anintro { top: 1100px;  height: 160px;  box-sizing: border-box;color: #ffffff }
+.summerAnxiety .antimer { top: 1400px;  height: 140px;   box-sizing: border-box;color: #ffffff}
+.summerAnxiety .anguide { top: 1700px;  height: 250px;   box-sizing: border-box;color: #ffffff}
+.summerAnxiety .ansupport { top: 2000px; height: 180px;   box-sizing: border-box;color: #ffffff}
+.summerAnxiety .anlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color: #ffffff}
+.summerPTSD .ptintro { top: 1100px;  height: 180px;  box-sizing: border-box; color: #ffffff}
+.summerPTSD .pttimer { top: 1400px;  height: 160px;  box-sizing: border-box;color: #ffffff}
+.summerPTSD .ptguide { top: 1700px;  height: 235px;  box-sizing: border-box;color: #ffffff}
+.summerPTSD .ptsupport { top: 2000px;  height: 185px;  box-sizing: border-box;color: #ffffff}
+.summerPTSD .ptlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color: #ffffff}
+.summerED .edintro { top: 1100px;   height: 160px;   box-sizing: border-box; color:#ffffff}
+.summerED .edtimer { top: 1400px;  height: 140px;   box-sizing: border-box;color: #ffffff}
+.summerED .edguide { top: 1700px;  height: 235px;  box-sizing: border-box;color: #ffffff}
+.summerED .edsupport { top: 2000px;  height: 185px;  box-sizing: border-box;color: #ffffff}
+.summerED .edlifeline { top: 2300px;   height: 430px;   box-sizing: border-box;color:#ffffff}
+.summerADHD .adintro { top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff}
+.summerADHD .adtimer { top: 1400px;  height: 145px;   box-sizing: border-box;color: #ffffff}
+.summerADHD .adguide { top: 1700px;   height: 235px;   box-sizing: border-box;color: #ffffff}
+.summerADHD .adsupport { top: 2000px; height: 185px;   box-sizing: border-box;color: #ffffff}
+.summerADHD .adlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color:#ffffff}
+.autumnQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color:#4d2827;}
+.autumnQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #4d2827;}
+.autumnQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #4d2827;}
+.autumnQuiz .anxietyquestions{ top: 2050px;  height: 350px;  box-sizing: border-box;color: #4d2827;}
+.autumnQuiz .ptsdquestions { top: 2450px;   height: 350px;   box-sizing: border-box;color: #4d2827;}
+.autumnQuiz .edquestions { top: 2850px;   height: 350px;   box-sizing: border-box;color:#4d2827;}
+.autumnQuiz .adhdquestions { top:  3250px;  height: 350px;  box-sizing: border-box;color: #4d2827;}
+.autumnDepression .deintro  { top: 1100px;  height: 160px;  box-sizing: border-box; color:#4d2827;}
+.autumnDepression .detimer  { top: 1400px;  height: 140px;  box-sizing: border-box;color:#4d2827;}
+.autumnDepression .deguide  { top: 1700px;  height: 205px;  box-sizing: border-box;color:#4d2827;}
+.autumnDepression .desupport{ top: 2000px; height: 210px; box-sizing: border-box;color:#4d2827;}
+.autumnDepression .delifeline { top:2300px; height:	450px; box-sizing:border-box;color:#4d2827;}
+.autumnAnxiety .anintro { top:	1100px; height:	160px; box-sizing:border-box;color:#4d2827;}
+.autumnAnxiety .antimer { top: 1400px;   height: 140px;   box-sizing: border-box;color:#4d2827;}
+.autumnAnxiety .anguide { top: 1700px;   height: 250px;   box-sizing: border-box;color:#4d2827;}
+.autumnAnxiety .ansupport { top: 2000px; height: 180px;   box-sizing: border-box;color:#4d2827;}
+.autumnAnxiety .anlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color:#4d2827;}
+.autumnPTSD .ptintro { top: 1100px;  height: 180px;  box-sizing: border-box; color:#4d2827;}
+.autumnPTSD .pttimer { top: 1400px;  height: 160px;  box-sizing: border-box;color:#4d2827;}
+.autumnPTSD .ptguide { top: 1700px;  height: 235px;  box-sizing: border-box;color:#4d2827;}
+.autumnPTSD .ptsupport { top: 2000px; height: 185px;   box-sizing: border-box;color:#4d2827;}
+.autumnPTSD .ptlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color:#4d2827;}
+.autumnED .edintro { top:	1100px; height:	160px; box-sizing:border-box;color:#4d2827;}
+.autumnED .edtimer { top: 1400px;   height:140px;   box-sizing:border-box;color:#4d2827;}
+.autumnED .edguide { top: 1700px;  height: 235px;   box-sizing: border-box;color:#4d2827;}
+.autumnED .edsupport { top: 2000px;  height: 185px;   box-sizing: border-box;color:#4d2827;}
+.autumnED .edlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color:#4d2827;}
+.autumnADHD .adintro { top: 1100px;  height: 160px;  box-sizing: border-box; color:#4d2827;}
+.autumnADHD .adtimer { top: 1400px;  height: 145px;   box-sizing: border-box;color:#4d2827;}
+.autumnADHD .adguide { top: 1700px;  height: 235px;   box-sizing: border-box;color:#4d2827;}
+.autumnADHD .adsupport { top: 2000px; height: 185px;   box-sizing: border-box;color:#4d2827;}
+.autumnADHD .adlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color:#4d2827;}
+.darkQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff;}
+.darkQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #ffffff;}
+.darkQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #ffffff;}
+.darkQuiz .anxietyquestions{ top: 2050px; height:	350px;   box-sizing:border-box;color:#ffffff;}
+.darkQuiz .ptsdquestions { top: 2450px; height:	350px;   box-sizing:border-box;color:#ffffff;}
+.darkQuiz .edquestions { top: 2850px;  height: 350px;  box-sizing: border-box;color: #ffffff;}
+.darkQuiz .adhdquestions { top: 3250px;  height: 350px;  box-sizing: border-box;color: #ffffff;}
+.darkDepression .deintro  { top: 1100px;  height: 160px;  box-sizing: border-box;color: #ffffff; }
+.darkDepression .detimer  { top: 1400px;  height: 140px;  box-sizing: border-box;color: #ffffff;}
+.darkDepression .deguide  { top: 1700px;  height: 205px;  box-sizing: border-box; color: #ffffff;}
+.darkDepression .desupport{ top: 2000px; height:	210px;   box-sizing:border-box;color:#ffffff;}
+.darkDepression .delifeline { top: 2300px;  height: 450px;  box-sizing: border-box;color: #ffffff;}
+.darkAnxiety .anintro { top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff;}
+.darkAnxiety .antimer { top: 1400px;   height: 140px;   box-sizing: border-box;color: #ffffff;}
+.darkAnxiety .anguide { top: 1700px;   height: 250px;   box-sizing: border-box;color: #ffffff;}
+.darkAnxiety .ansupport { top: 2000px;  height: 180px;  box-sizing: border-box;color: #ffffff;}
+.darkAnxiety .anlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color: #ffffff;}
+.darkPTSD .ptintro { top: 1100px;  height: 180px;  box-sizing: border-box; color: #ffffff;}
+.darkPTSD .pttimer { top: 1400px;  height: 160px;  box-sizing: border-box;color: #ffffff;}
+.darkPTSD .ptguide { top: 1700px;  height: 235px;   box-sizing: border-box;color: #ffffff;}
+.darkPTSD .ptsupport { top:	2000px; height:	185px;   box-sizing:border-box;color:#ffffff;}
+.darkPTSD .ptlifeline { top:  2300px;  height: 430px;  box-sizing: border-box;color: #ffffff;}    
+.darkED .edintro { top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff;}
+.darkED .edtimer { top: 1400px;  height: 140px;  box-sizing: border-box;color: #ffffff;}
+.darkED .edguide { top: 1700px;  height: 235px;   box-sizing: border-box;color: #ffffff;}
+.darkED .edsupport { top: 2000px;   height: 185px;   box-sizing: border-box;color: #ffffff;}
+.darkED .edlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;color: #ffffff;}
+.darkADHD .adintro { top: 1100px;  height: 160px;  box-sizing: border-box; color: #ffffff;}
+.darkADHD .adtimer { top: 1400px;  height: 145px;  box-sizing: border-box;color: #ffffff;}
+.darkADHD .adguide { top: 1700px;  height: 235px;  box-sizing: border-box;color: #ffffff;}
+.darkADHD .adsupport { top:	2000px; height:	185px;   box-sizing:border-box;color:#ffffff;}
+.darkADHD .adlifeline { top: 2300px; height:	430px;   box-sizing:border-box;color:#ffffff;}
+.lightQuiz .quizintro{ top: 1100px;  height: 160px;  box-sizing: border-box; color: #000;}
+.lightQuiz .quizinstructions{ top: 1400px;  height: 180px;  box-sizing: border-box;color: #000;}
+.lightQuiz .depressionquestions{ top: 1700px;  height: 320px;  box-sizing: border-box;color: #000;}
+.lightQuiz .anxietyquestions{ top: 2050px;  height: 350px;  box-sizing: border-box;color: #000;}
+.lightQuiz .ptsdquestions { top: 2450px;  height: 350px;  box-sizing: border-box;color: #000;}
+.lightQuiz .edquestions { top: 2850px;  height: 350px;  box-sizing: border-box;color: #000;}
+.lightQuiz .adhdquestions { top: 3250px;  height: 350px;  box-sizing: border-box;color: #000;}
+.lightDepression .deintro { top: 1100px; height :160px ;box-sizing:border-box ;color:#000 ;}
+.lightDepression .detimer  { top: 1400px;  height: 140px;  box-sizing: border-box;  color: #000;}
+.lightDepression .deguide  { top: 1700px;  height: 205px;  box-sizing: border-box;  color: #000;}
+.lightDepression .desupport{ top: 20005px; height :210px ;box-sizing:border-box ;color:#000 ;}
+.lightDepression .delifeline { top:	2300px; height :450px ;box-sizing:border-box ;color:#000 ;}
+.lightAnxiety .anintro { top: 1100px; height :160px ;box-sizing:border-box ;color:#000 ;}
+.lightAnxiety .antimer { top: 1400px;   height: 140px;   box-sizing: border-box;  color: #000;}
+.lightAnxiety .anguide { top: 1700px;  height: 250px;  box-sizing: border-box;  color: #000;}
+.lightAnxiety .ansupport { top: 2000px;  height: 180px;  box-sizing: border-box;  color: #000;}
+.lightAnxiety .anlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;  color: #000;}
+.lightPTSD .ptintro { top:	1100px; height :180px ;box-sizing:border-box ;color:#000 ;}
+.lightPTSD .pttimer { top:	1400px; height :160px ;box-sizing:border-box ;color:#000 ;}
+.lightPTSD .ptguide { top: 1700px;  height: 235px;  box-sizing: border-box;  color: #000;}
+.lightPTSD .ptsupport { top: 2000px;  height: 185px;  box-sizing: border-box;  color: #000;}
+.lightPTSD .ptlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;  color: #000;}
+.lightED .edintro { top: 1100px; height :160px ;box-sizing:border-box ;color:#000 ;}
+.lightED .edtimer { top: 1400px; height :145px ;box-sizing:border-box ;color:#000 ;}
+.lightED .edguide { top: 1700px;  height: 235px;  box-sizing: border-box;  color: #000;}
+.lightED .edsupport { top: 2000px;  height: 185px;  box-sizing: border-box;  color: #000;}
+.lightED .edlifeline { top: 2300px; height :430px ;box-sizing:border-box ;color:#000 ;}
+.lightADHD .adintro { top: 1100px; height :160px ;box-sizing:border-box ;color:#000 ;}
+.lightADHD .adtimer { top:	1400px; height :145px ;box-sizing:border-box ;color:#000 ;}
+.lightADHD .adguide { top: 1700px;  height: 235px;   box-sizing: border-box;  color: #000;}
+.lightADHD .adsupport { top: 2000px; height: 185px;  box-sizing: border-box;  color: #000; }
+.lightADHD .adlifeline { top: 2300px;  height: 430px;  box-sizing: border-box;  color: #000;}
+
+
 
